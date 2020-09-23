@@ -16,7 +16,7 @@ spring:
     virtual-host: /
 
 bus:
-  test: aaaa
+  test: bbbb
 
 PRODUCT:
   ribbon:
