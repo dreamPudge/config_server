@@ -6,7 +6,7 @@ spring:
     name: order
 
 bus:
-  test: ccc
+  test: ddd
 
 PRODUCT:
   ribbon:
