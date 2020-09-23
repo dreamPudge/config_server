@@ -4,6 +4,16 @@ server:
 spring:
   application:
     name: order
+  rabbitmq:
+    addresses: 10.7.173.95:5672
+    connection-timeout: 10000
+    password: guest
+    publisher-confirm-type: simple
+    publisher-returns: true
+    template:
+      mandatory: true
+    username: guest
+    virtual-host: /
 
 bus:
   test: aaaa
@@ -18,3 +28,4 @@ PRODUCT:
     OkToRetryOnAllOperatins: true
     MaxAutoRetries: 1 #对当前选择的实例重试次数，不包括第一次
     MaxAutoRetriesNextServer: 1 #切换的重试次数
+
