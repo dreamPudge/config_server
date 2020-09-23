@@ -5,13 +5,6 @@ spring:
   application:
     name: order
 
-eureka:
-  instance:
-    hostname: order1
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
 PRODUCT:
   ribbon:
     #请求链接超时时间
